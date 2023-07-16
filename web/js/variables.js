@@ -1,55 +1,55 @@
 colors = [
   {
     "name": "argent",
-    "color": "#FFFFFF",
+    "color": "#FAFAFA",
     "type": "metal",
     "prefixe": "d'"
   },
   {
     "name": "or",
-    "color": "#FFFF00",
+    "color": "#FFD700",
     "type": "metal",
     "prefixe": "d'"
   },
   {
     "name": "azur",
-    "color": "#0000FF",
+    "color": "#3200DC",
     "type": "couleur",
     "prefixe": "d'"
   },
   {
     "name": "gueules",
-    "color": "#FF0000",
+    "color": "#DC003C",
     "type": "couleur",
     "prefixe": "de"
   },
   {
     "name": "sinople",
-    "color": "#00FF00",
+    "color": "#008000",
     "type": "couleur",
     "prefixe": "de"
   },
   {
     "name": "sable",
-    "color": "#000000",
+    "color": "#111111",
     "type": "couleur",
     "prefixe": "de"
   },
   {
     "name": "pourpre",
-    "color": "#FF00FF",
+    "color": "#9932CC",
     "type": "couleur",
     "prefixe": "de"
   },
   {
     "name": "orange",
-    "color": "#FF8700",
+    "color": "#FF8C00",
     "type": "couleur",
     "prefixe": "d'"
   },
   {
     "name": "carnassion",
-    "color": "#882200",
+    "color": "#FFB6C1",
     "type": "couleur",
     "prefixe": "de"
   },
