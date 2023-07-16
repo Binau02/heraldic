@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <link href="../css/main.css" rel="stylesheet">
+
+  <script src="../js/variables.js" defer></script>
+  <script src="../js/shield_builder.js" defer></script>
+</head>
+
+<body>
+  <div id="builder">
+    <div class="flex">
+      <div id="drawing">
+        <canvas id="canvas" width="500px" height="800px"></canvas>
+      </div>
+      <div id="sheme">
+        <div id="base" class="piece" type="émail" émail="3">
+          <div>
+            <div class="prefix"></div>
+            <div class="part" id="main">
+              <div>base</div>
+              <div onclick="settings(this)" class="button">⚙️</div>
+              <div onclick="add(this)" class="button">+</div>
+            </div>
+          </div>
+          <div class="children"></div>
+        </div>
+      </div>
+    </div>
+    <div id="desc">
+    </div>
+  </div>
+</body>
+
+</html>

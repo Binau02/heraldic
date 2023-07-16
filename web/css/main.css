@@ -1,0 +1,91 @@
+#canvas {
+  height: 800px;
+  width: 500px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.piece > div {
+  display: flex;
+  gap: 0.5em;
+  color: lightgray;
+}
+
+.part {
+  display: flex;
+  gap: 1em;
+  color: black;
+}
+
+.children {
+  flex-direction: column;
+  gap: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.part {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border: solid 1px lightgray;
+  border-radius: 0.2em;
+}
+
+#settings {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(127, 127, 127, 0.2);
+  /* border: solid 1px red; */
+}
+
+#settings-main {
+  background-color: white;
+  border: solid 1px gray;
+  border-radius: 1em;
+  /* padding: 2em; */
+}
+
+#settings-main > div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#settings-title {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: solid 1px gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+#settings-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+/* #settings-content > form:not(:first-child) {
+  border-left: solid 1px gray;
+} */
+
+#settings-footer {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: solid 1px gray;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
