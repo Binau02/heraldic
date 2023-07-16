@@ -13,9 +13,9 @@ document.body.addEventListener("keydown", function(event) {
     case 'Escape':
       close();
       break;
-    case 'Enter':
-      validate();
-      break;
+    // case 'Enter':
+    //   validate();
+    //   break;
   }
   // console.log(event)
 });
@@ -24,25 +24,21 @@ function settings(elem) {
   let div = document.createElement("div");
   div.id = "settings";
 
-  // console.log(elem.parentElement);
   div.innerHTML = '<div id="settings-main"><div id="settings-title"><div>' + elem.parentElement.children[0].innerHTML +'</div><div class="button">X</div></div><div id="settings-content"></div><div id="settings-footer"><button>Valider</button> <button>Annuler</button></div></div>';
 
   document.body.appendChild(div);
 
   document.getElementById("settings-title").children[1].addEventListener("click", close);
-  document.getElementById("settings-footer").children[0].addEventListener("click", function() => {
-    validate(elem);
+  document.getElementById("settings-footer").children[0].addEventListener("click", function() {
+    validate(elem.parentElement.parentElement.parentElement);
   });
   document.getElementById("settings-footer").children[1].addEventListener("click", close);
 
   setRadios(elem.parentElement.parentElement.parentElement);
 }
 
-// content.innerHTML = '<form name="select-type"><input type="radio" value="couleur" name="type"> couleur<br><input type="radio" value="partition" name="type"> partition</form><form id="type"></form>'
-
 
 function setRadios(piece) {
-  // console.log("setRadios");
   content = document.getElementById("settings-content");
   content.innerHTML = '<form name="select-type">type<br></form>';
   type = piece.children[0].children[1].className
@@ -169,7 +165,29 @@ function close() {
 }
 
 function validate(elem) {
-  if (elem.)
+  if (elem.attributes.type.value == "partition") {
+    let n = 2;
+    let depth	= elem.attributes.depth.value;
+    let content = elem.children[1];
+    let name = elem.children[0].children[1].children[0].value;
+    if (elem.attributes.partition.value.includes("écartelé")) {
+      n = 4;
+    }
+    for (let i = 0; i < n; i++) {
+      let part = document.createElement("div");
+      part.className = "piece";
+      part.setAttribute("type", "émail");
+      part.setAttribute("émail", i+1);
+      part.setAttribute("depth", depth+1);
+      part.innerHTML = '<div><div class="prefix"> ';
+      for (let j = 0; j < depth; j++) {
+        part.innerHTML += "  ";
+      }
+      part.innerHTML += '└─</div><div class="part"><input type="text" value="' + name + " - " + (i+1) + '"><div class="button">⚙️</div><div class="button">+</div></div></div><div class="children"></div>'
+      
+      content.append(part);
+    }
+  }
   close();
   draw();
 }
