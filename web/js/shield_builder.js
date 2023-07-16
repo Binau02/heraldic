@@ -30,7 +30,9 @@ function settings(elem) {
   document.body.appendChild(div);
 
   document.getElementById("settings-title").children[1].addEventListener("click", close);
-  document.getElementById("settings-footer").children[0].addEventListener("click", validate);
+  document.getElementById("settings-footer").children[0].addEventListener("click", function() => {
+    validate(elem);
+  });
   document.getElementById("settings-footer").children[1].addEventListener("click", close);
 
   setRadios(elem.parentElement.parentElement.parentElement);
@@ -100,10 +102,6 @@ function setRadiosRecursive(data, depth, piece) {
         radio.name = "select-" + k
         radio.value = element;
         form.append(radio);
-        // console.log(k);
-        // console.log(colors);
-        // console.log(colors[element]);
-        // console.log("===============================");
         if (k.includes("émail")) {
           form.append(" " + colors[element].name);
         }
@@ -170,7 +168,8 @@ function close() {
   document.getElementById("settings").remove();
 }
 
-function validate() {
+function validate(elem) {
+  if (elem.)
   close();
   draw();
 }
