@@ -119,7 +119,7 @@ settingsData = {
         "échiqueté": {
           "forme": ["de six traits (défaut)", "autre"]
         },
-        "lasangé": {
+        "losangé": {
           "forme": ["de six traits (défaut)", "autre"]
         }
       },
@@ -133,26 +133,34 @@ settingsData = {
         "taillé": [],
         "tranché": [],
         "écartelé": [],
-        "écartelé en sautoire": []
+        "écartelé en sautoir": []
       }
     }
   },
-  "honor": {
-    "pièce": {
-      "pal": {
+  "pièce": {
+    "pièce honorable": {
+      "pièce": {
+        "pal": {
 
+        },
+        "chef": {
+
+        },
+        "champagne": {
+
+        }
       }
+    },
+    "meuble": {
+      "meuble": meubles,
+      "émail": colorsId,
+      "nombre": [],
+      "position": [
+        "abîme", // (centre de l'écu)
+        "abouté", // 3-4 (joint par le bout)
+        "accolé" // 2- (collé, fusée/losange/macle)
+      ]
     }
-  },
-  "meuble": {
-    "meuble": meubles,
-    "émail": colorsId,
-    "nombre": [],
-    "position": [
-      "abîme", // (centre de l'écu)
-      "abouté", // 3-4 (joint par le bout)
-      "accolé" // 2- (collé, fusée/losange/macle)
-    ]
   }
 }
 

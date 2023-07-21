@@ -37,7 +37,7 @@
   border-radius: 0.2em;
 }
 
-#settings {
+#settings, #add {
   position: absolute;
   width: 80vw;
   height: 80vh;
@@ -51,19 +51,19 @@
   /* border: solid 1px red; */
 }
 
-#settings-main {
+#settings-main, #add-main {
   background-color: white;
   border: solid 1px gray;
   border-radius: 1em;
   /* padding: 2em; */
 }
 
-#settings-main > div {
+#settings-main > div, #add-main > div {
   padding-left: 1em;
   padding-right: 1em;
 }
 
-#settings-title {
+#settings-title, #add-title {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: solid 1px gray;
@@ -71,7 +71,7 @@
   justify-content: space-between;
 }
 
-#settings-content {
+#settings-content, #add-content {
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
@@ -82,7 +82,7 @@
   border-left: solid 1px gray;
 } */
 
-#settings-footer {
+#settings-footer, #add-footer {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-top: solid 1px gray;
